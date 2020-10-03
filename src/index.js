@@ -1,5 +1,4 @@
 
-const array = [1,2,3,4,5,6,132345364]
 exports.min = function min (array) {
     if (array == null || array.length == 0) {
         return 0;
