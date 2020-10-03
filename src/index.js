@@ -1,12 +1,42 @@
 
+const array = [1,2,3,4,5,6,132345364]
 exports.min = function min (array) {
-  return 0;
+    if (array == null || array.length == 0) {
+        return 0;
+    } else {
+        let minimum = array[0];
+        for (let i = 1; i < array.length; i++) {
+            if (array[i] < minimum) {
+                minimum = array[i];
+            }
+        }
+            return minimum;
+     }
 }
 
 exports.max = function max (array) {
-  return 0;
+    if (array == null || array.length == 0) {
+        return 0;
+    } else {
+        let maximum = array[0];
+        for (let i = 1; i < array.length; i++) {
+            if (array[i] > maximum) {
+                maximum = array[i];
+            }
+        }
+        return maximum;
+    }
 }
 
 exports.avg = function avg (array) {
-  return 0;
+    if (array == null || array.length == 0) {
+        return 0;
+    } else {
+        let total = 0;
+        for (let i = 0; i < array.length; i++) {
+            total+=array[i];
+        }
+        let avarage = total / array.length;
+        return avarage;
+    }
 }
